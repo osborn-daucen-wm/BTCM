@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company Name</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Behind the Curtain Marketing</title>
+  <!-- <link rel="stylesheet" type="text/c/ss" href="styles.css" /> -->
+  <!-- Update these and comment out later! 2 below -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.min.css"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.min.js"></script> -->
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -104,7 +105,7 @@
     </v-app>
   </div> -->
   <header id="toolbar">
-    <div class="top-bar">
+    <!-- <div class="top-bar">
       <div class="company-name">
         <h2>Company Name</h2>
       </div>
@@ -122,92 +123,199 @@
     </nav>
     <div class="slogan">
       <h2>Company Slogan</h2>
-    </div>
+    </div> -->
+    <nav>
+      <div class="nav-wrapper blue lighten-1">
+        <a href="#" class="brand-logo center">Behind the Curtain Marketing</a>
+        <ul id="nav-mobile" class="hide-on-med-and-down left">
+          <li><a href="#about_us">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#get_quote">Get Quote</a></li>
+          <li><a href="#contact_info">Contact Info</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <label>
-      Material 3
-      <md-checkbox checked></md-checkbox>
-    </label>
+    <div class="container">
 
-    <md-outlined-button label="Back"></md-outlined-button>
-    <md-filled-button label="Next"></md-filled-button>
+      <div id="about_us" class="section scrollspy">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
+          Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla
+          efficitur
+          blandit in nec massa.</p>
+      </div>
 
-    <section id="about-us">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
-        Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla efficitur
-        blandit in nec massa.</p>
-    </section>
+      <div class="divider"></div>
 
-    <section id="services">
-      <h2>Services</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
-        Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla efficitur
-        blandit in nec massa.</p>
-    </section>
+      <div id="services" class="section scrollspy">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
+          Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla
+          efficitur
+          blandit in nec massa.</p>
+      </div>
 
-    <section id="get-quote">
-      <h2>Get a Quote</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="company">Company Name</label>
-        <input type="text" id="company" name="company" required>
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="contact-time">Preferred Contact Time</label>
-        <input type="time" id="contact-time" name="contact-time" required>
-        <fieldset>
-          <legend>Preferred Contact Method</legend>
-          <input type="radio" id="email-radio" name="contactMethod" value="email" checked>
-          <label for="email-radio">Email</label>
-          <input type="radio" id="call-radio" name="contactMethod" value="call">
-          <label for="call-radio">Call</label>
-          <input type="radio" id="text-radio" name="contactMethod" value="text">
-          <label for="text-radio">Text</label>
-        </fieldset>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+      <div class="divider"></div>
 
-    <section id="contact-info">
-      <h2>Contact Info</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
-        Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla efficitur
-        blandit in nec</p>
-      <div class="contact-info">
-        <div>
-          <h3>Address</h3>
-          <p>123 Main St, Suite 200<br>Anytown, USA 12345</p>
-        </div>
-        <div>
-          <h3>Email</h3>
-          <p><a href="mailto:info@companyname.com">info@companyname.com</a></p>
-        </div>
-        <div>
-          <h3>Phone</h3>
-          <p>(123) 456-7890</p>
+      <div id="get_quote" class="section scrollspy">
+        <h2>Get a Quote</h2>
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input placeholder="First Name" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">group</i>
+                <input id="company_name" type="text" class="validate">
+                <label for="company_name">Company Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Phone Number</label>
+              </div>
+
+              <input name="group1" type="radio" id="test1" />
+              <label for="test1">Home</label>
+
+              <input name="group1" type="radio" id="test2" />
+              <label for="test2">Cell</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">date_range</i>
+                <input type="checkbox" id="conSun" />
+                <label for="conSun">Sunday</label>
+
+                <input type="checkbox" id="conMon" />
+                <label for="conMon">Monday</label>
+
+                <input type="checkbox" id="conTues" />
+                <label for="conTues">Tuesday</label>
+
+                <input type="checkbox" id="conWed" />
+                <label for="conWed">Wednesday</label>
+
+                <input type="checkbox" id="conThurs" />
+                <label for="conThurs">Thursday</label>
+
+                <input type="checkbox" id="conFri" />
+                <label for="conFri">Friday</label>
+
+                <input type="checkbox" id="conSat" />
+                <label for="conSat">Saturday</label>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Preferred Contact Method</legend>
+              <input type="radio" id="email-radio" name="contactMethod" value="email" checked>
+              <label for="email-radio">Email</label>
+              <input type="radio" id="call-radio" name="contactMethod" value="call">
+              <label for="call-radio">Call</label>
+              <input type="radio" id="text-radio" name="contactMethod" value="text">
+              <label for="text-radio">Text</label>
+            </fieldset>
+
+          </form>
         </div>
       </div>
 
-      <div class="social-media">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </section>
+      <div class="divider"></div>
 
-    <footer>
-      <p>&copy; 2023 Company Name</p>
+      <div id="contact_info" class="section scrollspy">
+        <h2>Contact Info</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet malesuada metus, vel tristique elit.
+          Pellentesque blandit lacus vel mi dictum vehicula. Morbi quis nisi nisl. Donec quis ipsum vitae nulla
+          efficitur
+          blandit in nec</p>
+        <div class="contact-info">
+          <div>
+            <h3>Address</h3>
+            <p>123 Main St, Suite 200<br>Anytown, USA 12345</p>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@companyname.com">info@companyname.com</a></p>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>(123) 456-7890</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          © 2023 Behind the Curtain Marketing
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
 </body>
